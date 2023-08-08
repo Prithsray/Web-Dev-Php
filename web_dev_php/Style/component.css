@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(221, 221, 221);
+}
+.contain{
+    padding: 1em;
+}
+.sub-contain{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+.card{
+    box-shadow: 4px 2px 15px -4px rgba(0,0,0,0.69);
+    height: 30rem;
+}
+.card img{
+    height: 100%;
+}

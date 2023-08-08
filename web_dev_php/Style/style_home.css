@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ubuntu:wght@500&display=swap&family=Ysabeau+Infant:wght@500&family=Gabriela&family=Labrada:wght@500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 1em;
+    font-size: 1.8rem;
+    background: rgba(221, 221, 221, 0.705);
+    height: 4em;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(2px);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header .nav-bar-toggle{
+    display: none;
+    cursor: pointer;
+}
+header .nav-bar-toggle > #icon-btn{
+    font-size: 3rem;
+}
+header > .cs > ul{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+}
+header > .cs > ul > li > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 150ms ease-in;
+}
+header > .cs > ul > li > a > i{
+    display: none;
+}
+header > .cs > ul > li > a:hover,
+header > .cs > ul > li > a:active{
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid white;
+}
+
+.slide{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 5% 5% 5%;
+    display: flex;
+    align-items: center;
+}
+.slide > .title{
+    width: 100%;
+}
+.slide .title h1{    
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-family: 'Gabriela', serif;
+}
+.slide .title .btn{
+    border: none;
+    font-size: 1.5rem;
+    padding: 1em 3em;
+    border-radius: 10px;
+    background-color: orange;
+    cursor: pointer;
+}
+
+
+
+.work_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.work_details > h1{
+    font-size: 3rem;
+    font-family: 'Labrada', serif;
+}
+.collab{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collab h1{
+    font-size: 3rem;
+    font-family: 'Labrada', serif;
+}
+
+
+.collab > .container > .crd{
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+.collab > .container > .crd > i{
+    font-size: 6rem;
+    pointer-events: none;
+    color: rgb(78, 78, 78);
+}
+
+.card{
+    z-index: -1;
+    box-shadow: 5px 3px 14px -4px rgba(0,0,0,0.75);
+}
+
+
+.faq{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #303030c4;
+    flex-direction: column;
+    padding: 1em;
+}
+.faq > h1{
+    font-size: 3rem;
+    font-family: 'Labrada', serif;
+}
+.faq > .faq_content{
+    display: flex;
+}
+
+
+.footer{
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-evenly;
+    height: 30vh;
+    gap: 1em;
+    font-family: 'Labrada', serif;
+}
+.footer > .company > p{
+    font-size: 1.3rem;
+}
+.footer > .links > ul{
+    padding: 0%;
+}
+.footer > .links > ul > li{
+    list-style: none;
+}
+.footer > .links > ul > li > a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+.footer > .icons{
+    display: flex;
+    flex-direction: column;
+}
+.footer > .icons > .social-icons{
+    display: flex;
+    gap: 1em;
+}
+.footer > .icons > .social-icons > i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 58em) {
+
+    .slide > .title{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slide .title .btn{
+        font-size: 1.5rem;
+    }
+
+    header > .nav-bar-toggle{
+        position: absolute;
+        z-index: 9999;
+        color: rgb(0, 0, 0);
+        width: auto;
+        right: 1em;
+        top: 1em;
+    }
+    header > .nav-bar-toggle{
+        display: flex;
+    }
+
+    #icon-btn[name="right-arrow"]{
+        display: none;
+    }
+    #icon-btn[name="left-arrow"]{
+        display: block;
+    }
+    
+    .click #icon-btn[name="right-arrow"]{
+        display: block;
+        color: aliceblue;
+    }
+    .click #icon-btn[name="left-arrow"]{
+        display: none;
+    }
+
+    header > .cs{
+        position: fixed;
+        inset: 0 0 0 30%;
+        background: rgba(19, 19, 19, 0.863);
+        backdrop-filter: blur(2px);
+        padding: min(30vh,10rem) 0;
+        height: 100vh;        
+        transform: translateX(100%);
+        transition: 350ms ease-in;
+    }
+
+    .cs[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    
+    header > .cs > ul {
+        flex-direction: column;
+        gap: 0;
+        padding-left: 0%;
+    }
+    header > .cs > ul > li > a{
+        width: 100%;
+        display: flex;
+        gap: 2em;
+        font-size: 2rem;
+        padding: 1em 2em;
+        color: aliceblue;
+        transition: 250ms ease-in;
+    }
+    header > .cs > ul > li > a > i{
+        display: block;
+    }
+
+    header > .cs > ul > li:hover,
+    header > .cs > ul > li:active{
+        background-color: rgba(255, 255, 255, 0.644);
+    }
+    header > .cs > ul > li > a:hover,
+    header > .cs > ul > li > a:active{
+        color: rgb(0, 0, 0);
+    }
+
+    .collab > .container > .crd > i{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 415px){
+    .collab > .container > .crd{
+        height: 20vh;
+    }
+    .faq{
+        height: 50vh;
+    }
+    .footer{
+        height: 25vh;
+    }
+}

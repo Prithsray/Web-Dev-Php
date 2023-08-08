@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.cen{
+    display: flex;
+    justify-content: center;
+}
+.hr{
+    border: 1;
+}
+
+
+/* login---------------------------- */
+.cd{
+    height: 70vh;
+    border-radius: 2em;
+    border: 1px solid rgba(184, 184, 184, 0.432);
+    background: rgba(17, 17, 17, 0.178);
+    backdrop-filter: blur(0.1em);
+    color: aliceblue;   
+    margin: 0 2em; 
+}
+.heading{
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.heading span{
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+form{
+    z-index: 999;
+}
+
+.ma{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/pic2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+/* register-------------------------- */
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/pic2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cb{
+    border: 1px solid rgba(184, 184, 184, 0.432);
+    border-radius: 2em;
+    background: rgba(17, 17, 17, 0.178);
+    backdrop-filter: blur(2px);
+    color: aliceblue;
+}
+
+/* ------------------------------------------------------------ */
+
+.logo-icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo-icons i{
+    font-size: 2rem;
+}
